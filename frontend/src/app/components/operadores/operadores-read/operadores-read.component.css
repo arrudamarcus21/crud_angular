@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
+.edit > i {
+color: #d9cd26;
+}
+
+.delete > i {
+color: #e35e6b;
+}
+
+
+.form-operario  {
+    min-width: 220px;
+}
+  
+.form-operario form > * {
+    margin: 5px 0;
+}
+  
+.mat-form-field, section {
+    margin-left: 12px;
+}
+  
+.campo {
+    display: flex;
+}

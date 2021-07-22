@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-title>Novo Operador</mat-card-title>
+    <mat-card-content>
+        <form class="form-operario" [formGroup]="novoOperarioForm">
+            <div>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="nome" [(ngModel)]="operadores.nome" name="nome" formControlName="nome">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="email" [(ngModel)]="operadores.email" name="email"
+                        formControlName="email" [email]="true">
+                </mat-form-field>
+            </div>
+            <div class="campo">
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="contato" [(ngModel)]="operadores.contato" name="contato"
+                        formControlName="contato">
+                </mat-form-field>
+
+                <section class="section">
+                    <label>Status </label>
+                    <mat-checkbox class="example-margin" formControlName="ativo" [(ngModel)]="operadores.ativo">
+                    </mat-checkbox>
+                </section>
+            </div>
+        </form>
+        <button mat-raised-button (click)="createOperador()" color="primary">
+            Salvar
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </mat-card-content>
+</mat-card>

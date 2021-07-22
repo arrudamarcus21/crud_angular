@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title>Editar Operador</mat-card-title>
+    <mat-card-content>
+        <form class="form-operario">
+            <div>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="nome" [(ngModel)]="operadores.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="email" [(ngModel)]="operadores.email" name="email">
+                </mat-form-field>
+            </div>
+            <div class="campo">
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="contato" [(ngModel)]="operadores.contato" name="contato">
+                </mat-form-field>
+                <section class="section">
+                    <label>Status</label>
+                    <mat-checkbox class="" [(ngModel)]="operadores.ativo" name="ativo">
+                    </mat-checkbox>
+                </section>
+            </div>
+        </form>
+        <button mat-raised-button (click)="updateOperador()" color="primary">
+            Alterar
+        </button>
+        <button mat-raised-button (click)="cancel()" color="warn">
+            Cancelar
+        </button>
+    </mat-card-content>
+</mat-card>

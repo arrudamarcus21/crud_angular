@@ -1,0 +1,39 @@
+{
+  "operadores": [
+    {
+      "id": 1,
+      "nome": "Marcus Vinicius P A",
+      "email": "teste",
+      "ativo": true,
+      "contato": "67 9999-9999"
+    },
+    {
+      "id": 2,
+      "nome": "Da",
+      "email": "Da@teste.com",
+      "ativo": true,
+      "contato": "67 9999-9999"
+    },
+    {
+      "id": 3,
+      "nome": "Gabriela",
+      "email": "Gabriela@teste.com",
+      "ativo": false,
+      "contato": "67 9999-9999"
+    },
+    {
+      "id": 4,
+      "nome": "Joao",
+      "email": "Joao@teste.com",
+      "ativo": false,
+      "contato": "67 9999-9999"
+    },
+    {
+      "id": 5,
+      "nome": "Julia",
+      "email": "Julia@teste.com",
+      "ativo": false,
+      "contato": "67 9999-9999"
+    }
+  ]
+}

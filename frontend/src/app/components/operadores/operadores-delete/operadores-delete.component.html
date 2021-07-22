@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>Confirmar Exclusão do Operador</mat-card-title>
+    <mat-card-content>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" [value]="operador.nome" name="nome" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email" [value]="operador.email" name="email" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Contato" [value]="operador.contato" name="contato" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Status" [value]="operador.ativo | ativoInativo" name="ativo" disabled>
+            </mat-form-field>
+        </form>
+        <button mat-raised-button (click)="deleteOperador()" color="warn">
+            Deletar
+        </button>
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </mat-card-content>
+</mat-card>
